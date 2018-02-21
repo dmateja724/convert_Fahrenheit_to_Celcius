@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">	
+    <title>Convert from Fahrenheit to Centigrade</title>
+   
+</head>
+<body>
+    <main>
+        <h1>Thanks for using the temperature converter</h1>
+    </main>
+     <script>
+    do {
+        var fTemp = parseInt(prompt("Enter temperature in Farenheit.")); 
+        if (!isNaN(fTemp) || fTemp==null || fTemp=="") { //parameters to execute else statement
+            var cTemp = parseInt((fTemp - 32)*(5/9)); // conversion to Celcius
+            alert("Temperature in Farenheit is " + fTemp + " degrees.\n" + "\n Temperature in Celcius is " + cTemp + " degrees.");
+         } else {
+                alert("You have entered and invalid entry.");
+        }
+        again = confirm("Would you like to restart?"); //window to initiate restart 
+    //if else statement for the confirm box that allows the "ok" and "cancel" buttons to work respectively 
+    } while (again == true)  { 
+        if (confirm == true) {
+            again = true;
+        } else {
+            again = false;
+        }
+    }
+    </script>
+</body>
+</html>
